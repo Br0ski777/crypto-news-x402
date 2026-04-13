@@ -41,6 +41,77 @@ Do NOT use for price data -- use finance_get_token_price instead. Do NOT use for
         },
         required: [],
       },
+      outputSchema: {
+          "type": "object",
+          "properties": {
+            "results": {
+              "type": "number",
+              "description": "Number of articles returned"
+            },
+            "sources": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "News sources used"
+            },
+            "totalFetched": {
+              "type": "number",
+              "description": "Total articles fetched before filtering"
+            },
+            "tokenFilter": {
+              "type": "string",
+              "description": "Token filter applied"
+            },
+            "sentimentSummary": {
+              "type": "object",
+              "properties": {
+                "positive": {
+                  "type": "number"
+                },
+                "negative": {
+                  "type": "number"
+                },
+                "neutral": {
+                  "type": "number"
+                }
+              }
+            },
+            "articles": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "source": {
+                    "type": "string"
+                  },
+                  "publishedAt": {
+                    "type": "string"
+                  },
+                  "sentiment": {
+                    "type": "string"
+                  },
+                  "sentimentScore": {
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "timestamp": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "results",
+            "articles"
+          ]
+        },
     },
   ],
 };
