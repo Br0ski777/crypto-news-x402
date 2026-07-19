@@ -35,7 +35,7 @@ Any x402-aware client ([`@x402/fetch`](https://www.npmjs.com/package/@x402/fetch
 
 | Tool | Method | Path | Price | Description |
 |---|---|---|---|---|
-| `crypto_get_latest_news` | GET | `/api/news` | $0.002 | Get latest crypto news with sentiment scores and token mentions |
+| `crypto_get_latest_news` | GET | `/api/news` | $0.005 | Get latest crypto news with sentiment scores and token mentions |
 
 ### `crypto_get_latest_news`
 
