@@ -9,7 +9,7 @@ export const API_CONFIG: ApiConfig = {
     {
       method: "GET",
       path: "/api/news",
-      price: "$0.002",
+      price: "$0.005",
       description: "Get latest crypto news with sentiment scores and token mentions",
       toolName: "crypto_get_latest_news",
       toolDescription: `Use this when you need the latest crypto news and market-moving headlines. Returns aggregated articles with sentiment in JSON.
